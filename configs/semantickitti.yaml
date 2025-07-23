@@ -1,0 +1,62 @@
+# SemanticKITTI 数据集配置
+defaults:
+  - geoformer_pp_base  # 继承基础模型配置
+
+model:
+  num_classes: 19      # SemanticKITTI有19个有效类别
+
+data:
+  dataset: SemanticKITTIDataset
+  root_dir: /path/to/semantickitti
+  # 忽略的类别ID (转换为255)
+  ignore_labels: [0, 1, 10, 11, 13, 15, 16, 18, 29, 31, 32]
+  # 类别名称映射
+  class_names:
+    0: "unlabeled"
+    1: "outlier"
+    10: "car"
+    11: "bicycle"
+    13: "bus"
+    15: "motorcycle"
+    16: "on-rails"
+    18: "truck"
+    29: "other-vehicle"
+    31: "person"
+    32: "bicyclist"
+    33: "motorcyclist"
+    34: "road"
+    35: "parking"
+    36: "sidewalk"
+    37: "other-ground"
+    38: "building"
+    39: "fence"
+    40: "vegetation"
+    41: "trunk"
+    42: "terrain"
+    43: "pole"
+    44: "traffic-sign"
+  # 有效类别ID映射
+  learning_map:
+    0: 255  # "unlabeled"
+    1: 255  # "outlier"
+    10: 0   # "car"
+    11: 1   # "bicycle"
+    13: 4   # "bus"
+    15: 2   # "motorcycle"
+    16: 4   # "on-rails"
+    18: 3   # "truck"
+    29: 4   # "other-vehicle"
+    31: 5   # "person"
+    32: 6   # "bicyclist"
+    33: 7   # "motorcyclist"
+    34: 8   # "road"
+    35: 9   # "parking"
+    36: 10  # "sidewalk"
+    37: 11  # "other-ground"
+    38: 12  # "building"
+    39: 13  # "fence"
+    40: 14  # "vegetation"
+    41: 15  # "trunk"
+    42: 16  # "terrain"
+    43: 17  # "pole"
+    44: 18  # "traffic-sign"

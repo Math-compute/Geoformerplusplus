@@ -1,0 +1,103 @@
+# ScanNet 数据集配置
+defaults:
+  - geoformer_pp_base  # 继承基础模型配置
+
+model:
+  num_classes: 20      # ScanNet有20个类别
+
+data:
+  dataset: ScanNetDataset
+  root_dir: /path/to/scannet
+  # 每个场景的采样点数
+  num_points: 40960
+  # 忽略的类别ID
+  ignore_labels: [0]
+  # 类别名称
+  class_names:
+    1: "wall"
+    2: "floor"
+    3: "cabinet"
+    4: "bed"
+    5: "chair"
+    6: "sofa"
+    7: "table"
+    8: "door"
+    9: "window"
+    10: "bookshelf"
+    11: "picture"
+    12: "counter"
+    13: "blinds"
+    14: "desk"
+    15: "shelves"
+    16: "curtain"
+    17: "dresser"
+    18: "pillow"
+    19: "mirror"
+    20: "floor-mat"
+    21: "clothes"
+    22: "ceiling"
+    23: "books"
+    24: "refrigerator"
+    25: "television"
+    26: "paper"
+    27: "towel"
+    28: "shower-curtain"
+    29: "box"
+    30: "whiteboard"
+    31: "person"
+    32: "night-stand"
+    33: "toilet"
+    34: "sink"
+    35: "lamp"
+    36: "bathtub"
+    37: "bag"
+    0: "unlabeled"
+  # 学习映射 (合并罕见类别)
+  learning_map:
+    0: 0     # "unlabeled"
+    1: 1     # "wall"
+    2: 2     # "floor"
+    3: 3     # "cabinet"
+    4: 4     # "bed"
+    5: 5     # "chair"
+    6: 6     # "sofa"
+    7: 7     # "table"
+    8: 8     # "door"
+    9: 9     # "window"
+    10: 10   # "bookshelf"
+    11: 11   # "picture"
+    12: 12   # "counter"
+    13: 13   # "blinds"
+    14: 14   # "desk"
+    15: 15   # "shelves"
+    16: 16   # "curtain"
+    17: 17   # "dresser"
+    18: 18   # "pillow"
+    19: 19   # "mirror"
+    20: 20   # "floor-mat"
+    21: 20   # "clothes" -> "floor-mat"
+    22: 20   # "ceiling" -> "floor-mat"
+    23: 10   # "books" -> "bookshelf"
+    24: 20   # "refrigerator" -> "floor-mat"
+    25: 20   # "television" -> "floor-mat"
+    26: 20   # "paper" -> "floor-mat"
+    27: 20   # "towel" -> "floor-mat"
+    28: 20   # "shower-curtain" -> "floor-mat"
+    29: 20   # "box" -> "floor-mat"
+    30: 20   # "whiteboard" -> "floor-mat"
+    31: 20   # "person" -> "floor-mat"
+    32: 20   # "night-stand" -> "floor-mat"
+    33: 20   # "toilet" -> "floor-mat"
+    34: 20   # "sink" -> "floor-mat"
+    35: 20   # "lamp" -> "floor-mat"
+    36: 20   # "bathtub" -> "floor-mat"
+    37: 20   # "bag" -> "floor-mat"
+
+train:
+  batch_size: 4
+  epochs: 150
+  optimizer:
+    lr: 0.0006
+  scheduler:
+    name: CosineAnnealingLR
+    T_max: 150

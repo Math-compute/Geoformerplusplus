@@ -1,0 +1,72 @@
+#/media/dhlg/048AA9858AA97438/point clode/Pointnet_Pointnet2_pytorch-master (1)/data/stanford_indoor3d
+# 数据集配置
+data:
+  root_dir: /media/dhlg/048AA9858AA97438/point clode/Pointnet_Pointnet2_pytorch-master (1)/data/stanford_indoor3d
+  num_points: 40960
+  block_size: 1.5
+  stride: 0.75
+  test_area: 5
+  train_areas: ["Area_1", "Area_2", "Area_3", "Area_4", "Area_6"]
+  val_areas: ["Area_5"]
+
+# 模型配置
+model:
+  name: GeoFormerPlusPlus
+  base_kwargs:
+    input_dim: 6             # xyz + rgb
+    embed_dim: 128           # 增大特征维度
+    depth: 12
+    num_heads: 8
+    mlp_ratio: 4.0
+    drop_rate: 0.1
+  
+  # 几何感知配置
+  geometric:
+    enable: True
+    normal_k: 20            # 室内场景需要更多邻居
+    curvature_k: 16
+    fusion_dim: 64
+    lambda_geo: 0.7         # 增大几何特征权重(室内场景几何特征更重要)
+  
+  # 边界增强配置
+  boundary:
+    enable: True
+    threshold_geo: 0.25     # 适应室内场景的边界特征
+    threshold_sem: 0.6
+    enhance_factor: 0.4
+  
+  # 自监督预训练配置
+  self_supervised:
+    enable: True
+    mask_ratio: 0.6
+    reconstruction_weight: 0.5
+    normal_consistency_weight: 0.3
+
+classifier:
+  num_classes: 13
+
+# 训练配置
+train:
+  batch_size: 4              # 增大批次大小
+  epochs: 300                # 增加训练轮数
+  num_workers: 8
+  mixed_precision: True      # 启用混合精度训练
+  optimizer:
+    name: AdamW              # 使用AdamW优化器
+    lr: 0.001
+    weight_decay: 0.05       # 增大权重衰减防止过拟合
+  scheduler:
+    name: CosineAnnealingLR  # 使用余弦退火调度
+    T_max: 300
+    eta_min: 0.00001
+  
+  # 添加梯度裁剪
+  grad_clip:
+    enable: True
+    max_norm: 5.0
+
+# 输出配置
+save_dir: ./checkpoints/s3dis_geoformer
+log_dir: ./logs/s3dis_geoformer
+
+

@@ -1,0 +1,72 @@
+# GeoFormer++ 大型配置 (增加模型容量)
+model:
+  name: GeoFormerPlusPlus
+  input_dim: 3
+  feature_dim: 512           # 更大的特征维度
+  num_heads: 16              # 更多注意力头
+  scales: [16, 32, 64, 128]  # 增加一个尺度
+  num_classes: 20
+  
+  # 增强的几何感知模块
+  geometric:
+    enable: True
+    normal_k: 24            # 更多邻居以提高准确性
+    curvature_k: 16
+    fusion_dim: 128         # 更大的融合维度
+    lambda_geo: 0.6
+    multi_scale_geo: True   # 启用多尺度几何特征
+  
+  # 高级边界处理
+  boundary:
+    enable: True
+    threshold_geo: 0.3
+    threshold_sem: 0.7
+    enhance_factor: 0.4
+    use_attention: True     # 使用注意力机制处理边界
+    boundary_head_dim: 64   # 边界头特征维度
+  
+  # 自监督预训练增强
+  self_supervised:
+    enable: True
+    mask_ratio: 0.7
+    reconstruction_weight: 0.6
+    normal_consistency_weight: 0.4
+    feature_consistency_weight: 0.3  # 特征一致性约束
+
+train:
+  batch_size: 4              # 减小批次大小以适应更大模型
+  epochs: 120
+  mixed_precision: True
+  accumulate_grad_batches: 2
+  optimizer:
+    name: AdamW              # 使用AdamW优化器
+    lr: 0.0008
+    weight_decay: 0.001
+  scheduler:
+    name: CosineAnnealingLR
+    T_max: 120
+    eta_min: 0.000001
+
+data:
+  dataset: SemanticKITTIDataset
+  root_dir: /path/to/semantickitti
+  num_workers: 8
+  train_transforms:
+    - name: RandomRotation
+      params: {max_angle: 60}
+    - name: RandomTranslation
+      params: {max_dist: 0.15}
+    - name: Jittering
+      params: {sigma: 0.015, clip: 0.075}
+    - name: RandomScale
+      params: {scale_low: 0.8, scale_high: 1.2}  # 增加缩放变换
+    - name: PointCloudNormalize
+  val_transforms:
+    - name: PointCloudNormalize
+
+logging:
+  log_dir: ./logs/geoformer_pp_large
+  save_dir: ./checkpoints/geoformer_pp_large
+  save_top_k: 3
+  monitor: val_mIoU
+  mode: max

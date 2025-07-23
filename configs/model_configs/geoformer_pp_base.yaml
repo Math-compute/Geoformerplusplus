@@ -1,0 +1,65 @@
+# GeoFormer++ 基础配置
+model:
+  name: GeoFormerPlusPlus
+  input_dim: 3               # 输入维度 (x,y,z)
+  feature_dim: 256          # 特征维度
+  num_heads: 8              # 注意力头数
+  scales: [16, 32, 64]      # 多尺度邻域大小
+  num_classes: 20           # 分类类别数，根据数据集调整
+  
+  # 几何感知模块配置
+  geometric:
+    enable: True
+    normal_k: 16            # 法向量估计的邻居数
+    curvature_k: 8          # 曲率估计的邻居数
+    fusion_dim: 64          # 几何特征融合维度
+    lambda_geo: 0.5         # 几何特征权重
+  
+  # 边界增强模块配置
+  boundary:
+    enable: True
+    threshold_geo: 0.3      # 几何不连续性阈值
+    threshold_sem: 0.7      # 语义不确定性阈值
+    enhance_factor: 0.3     # 边界特征增强系数
+  
+  # 语义引导模块配置
+  semantic_guidance:
+    enable: True
+    guide_channels: 128     # 语义引导特征通道数
+    temperature: 0.1        # softmax温度系数
+
+train:
+  batch_size: 8              # 批次大小
+  epochs: 100                # 训练轮数
+  mixed_precision: True      # 是否使用混合精度训练
+  accumulate_grad_batches: 1 # 梯度累积批次
+  optimizer:
+    name: Adam               # 优化器类型
+    lr: 0.001                # 学习率
+    weight_decay: 0.0001     # 权重衰减
+  scheduler:
+    name: CosineAnnealingLR  # 学习率调度器
+    T_max: 100               # Cosine Annealing周期
+    eta_min: 0.00001         # 最小学习率
+
+data:
+  dataset: SemanticKITTIDataset  # 数据集类名
+  root_dir: /path/to/semantickitti  # 数据集根目录
+  num_workers: 8                 # 数据加载工作线程数
+  train_transforms:
+    - name: RandomRotation       # 随机旋转变换
+      params: {max_angle: 45}    # 最大旋转角度(度)
+    - name: RandomTranslation    # 随机平移变换
+      params: {max_dist: 0.1}    # 最大平移距离
+    - name: Jittering             # 点云抖动
+      params: {sigma: 0.01, clip: 0.05}  # 噪声参数
+    - name: PointCloudNormalize  # 点云归一化
+  val_transforms:
+    - name: PointCloudNormalize  # 验证集只需要归一化
+
+logging:
+  log_dir: ./logs/geoformer_pp_base  # 日志目录
+  save_dir: ./checkpoints/geoformer_pp_base  # 模型保存目录
+  save_top_k: 3                     # 保存最佳k个模型
+  monitor: val_mIoU                 # 监控指标
+  mode: max                         # 监控模式 (max/min)

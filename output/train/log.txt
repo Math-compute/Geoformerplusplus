@@ -1,0 +1,146 @@
+2025-07-10 17:16:52,362 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 17:17:05,713 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 17:27:06,961 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 17:28:26,369 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 18:01:24,141 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 18:07:27,192 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 18:25:20,826 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 18:26:21,039 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 18:36:34,346 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 18:36:34,349 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-10 18:36:34,349 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-10 18:36:34,349 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-10 18:36:34,349 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-10 18:36:34,349 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-10 18:36:34,349 - GeoFormer_train - ERROR - 配置文件中缺少必要的data.root_dir参数
+2025-07-10 20:25:07,734 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 20:25:07,737 - GeoFormer_train - ERROR - 配置文件中缺少必要的data.root_dir参数
+2025-07-10 20:27:12,488 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 20:33:06,496 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 20:33:06,499 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-10 20:33:06,499 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-10 20:33:06,499 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-10 20:33:06,499 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-10 20:33:06,499 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-10 20:37:08,699 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-10 20:37:08,702 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-10 20:37:08,702 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-10 20:37:08,702 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-10 20:37:08,702 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-10 20:37:08,702 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-11 11:22:55,938 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-11 11:22:55,945 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-11 11:22:55,945 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-11 11:22:55,945 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-11 11:22:55,945 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-11 11:22:55,946 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-11 12:07:07,080 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-11 12:07:07,082 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-11 12:07:07,083 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-11 12:07:07,083 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-11 12:07:07,083 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis/Stanford3dDataset_v1.2_Aligned_Version', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-11 12:07:07,083 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-11 12:29:15,254 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-11 12:29:15,257 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-11 12:29:15,257 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-11 12:29:15,257 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-11 12:29:15,257 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis/Stanford3dDataset_v1.2_Aligned_Version', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-11 12:29:15,258 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-11 12:35:29,945 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-11 12:35:30,468 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-11 12:35:30,472 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-11 12:35:30,576 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-11 12:35:30,679 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis/Stanford3dDataset_v1.2_Aligned_Version', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-11 12:35:30,680 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-11 12:59:46,442 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-11 12:59:46,445 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-11 12:59:46,445 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-11 12:59:46,445 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-11 12:59:46,445 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis/Stanford3dDataset_v1.2_Aligned_Version', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-11 12:59:46,446 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-11 13:01:44,949 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-11 13:01:44,952 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-11 13:01:44,952 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-11 13:01:44,952 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-11 13:01:44,953 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis/Stanford3dDataset_v1.2_Aligned_Version', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-11 13:01:44,953 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-11 13:02:27,750 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-11 13:02:27,755 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-11 13:02:27,755 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-11 13:02:27,755 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-11 13:02:27,755 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis/Stanford3dDataset_v1.2_Aligned_Version', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-11 13:02:27,755 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-11 13:07:41,086 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-11 13:07:41,089 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-11 13:07:41,089 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-11 13:07:41,089 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-11 13:07:41,089 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis/Stanford3dDataset_v1.2_Aligned_Version', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-11 13:07:41,090 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-11 14:22:32,512 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-11 14:22:32,515 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-11 14:22:32,515 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-11 14:22:32,515 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-11 14:22:32,516 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis/Stanford3dDataset_v1.2_Aligned_Version', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-11 14:22:32,516 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-11 14:24:52,475 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-11 14:24:52,478 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-11 14:24:52,478 - GeoFormer_train - INFO -   defaults: ['geoformer_pp_base']
+2025-07-11 14:24:52,478 - GeoFormer_train - INFO -   model: {'num_classes': 13}
+2025-07-11 14:24:52,478 - GeoFormer_train - INFO -   data: {'dataset': 'S3DISDataset', 'data_root': '/media/dhlg/048AA9858AA97438/point clode/GeoFormerPlusPlus/datas/s3dis/Stanford3dDataset_v1.2_Aligned_Version1.1', 'num_points': 40960, 'block_size': 1.5, 'stride': 0.75, 'class_names': {0: 'ceiling', 1: 'floor', 2: 'wall', 3: 'beam', 4: 'column', 5: 'window', 6: 'door', 7: 'table', 8: 'chair', 9: 'sofa', 10: 'bookcase', 11: 'board', 12: 'clutter'}, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-11 14:24:52,478 - GeoFormer_train - INFO -   train: {'batch_size': 2, 'epochs': 200, 'optimizer': {'lr': 0.0005}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-12 18:06:15,770 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-12 18:06:15,788 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-12 18:06:15,788 - GeoFormer_train - INFO -   data: {'data_root': '/media/dhlg/048AA9858AA97438/point clode/Pointnet_Pointnet2_pytorch-master (1)/data/stanford_indoor3d', 'num_points': 2048, 'block_size': 1.5, 'stride': 0.75, 'test_area': 5, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-12 18:06:15,788 - GeoFormer_train - INFO -   model: {'name': 'GeoFormer', 'base_kwargs': {'input_dim': 6, 'embed_dim': 32, 'depth': 6, 'num_heads': 4, 'mlp_ratio': 4.0, 'drop_rate': 0.1}}
+2025-07-12 18:06:15,788 - GeoFormer_train - INFO -   classifier: {'num_classes': 13}
+2025-07-12 18:06:15,788 - GeoFormer_train - INFO -   train: {'batch_size': 1, 'epochs': 200, 'num_workers': 4, 'optimizer': {'name': 'Adam', 'lr': 0.0005, 'weight_decay': 0.0001}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-12 18:06:15,788 - GeoFormer_train - INFO -   save_dir: ./checkpoints/s3dis_geoformer
+2025-07-12 18:06:15,789 - GeoFormer_train - INFO -   log_dir: ./logs/s3dis_geoformer
+2025-07-12 18:06:58,654 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-12 18:06:58,657 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-12 18:06:58,657 - GeoFormer_train - INFO -   data: {'data_root': '/media/dhlg/048AA9858AA97438/point clode/Pointnet_Pointnet2_pytorch-master (1)/data/stanford_indoor3d', 'num_points': 2048, 'block_size': 1.5, 'stride': 0.75, 'test_area': 5, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-12 18:06:58,775 - GeoFormer_train - INFO -   model: {'name': 'GeoFormer', 'base_kwargs': {'input_dim': 6, 'embed_dim': 32, 'depth': 6, 'num_heads': 4, 'mlp_ratio': 4.0, 'drop_rate': 0.1}}
+2025-07-12 18:06:58,776 - GeoFormer_train - INFO -   classifier: {'num_classes': 13}
+2025-07-12 18:06:58,776 - GeoFormer_train - INFO -   train: {'batch_size': 1, 'epochs': 200, 'num_workers': 4, 'optimizer': {'name': 'Adam', 'lr': 0.0005, 'weight_decay': 0.0001}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-12 18:06:58,777 - GeoFormer_train - INFO -   save_dir: ./checkpoints/s3dis_geoformer
+2025-07-12 18:06:58,777 - GeoFormer_train - INFO -   log_dir: ./logs/s3dis_geoformer
+2025-07-12 18:08:41,688 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-12 18:08:41,691 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-12 18:08:41,691 - GeoFormer_train - INFO -   data: {'data_root': '/media/dhlg/048AA9858AA97438/point clode/Pointnet_Pointnet2_pytorch-master (1)/data/stanford_indoor3d', 'num_points': 2048, 'block_size': 1.5, 'stride': 0.75, 'test_area': 5, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-12 18:08:41,691 - GeoFormer_train - INFO -   model: {'name': 'GeoFormer', 'base_kwargs': {'input_dim': 6, 'embed_dim': 32, 'depth': 6, 'num_heads': 4, 'mlp_ratio': 4.0, 'drop_rate': 0.1}}
+2025-07-12 18:08:41,691 - GeoFormer_train - INFO -   classifier: {'num_classes': 13}
+2025-07-12 18:08:41,691 - GeoFormer_train - INFO -   train: {'batch_size': 1, 'epochs': 200, 'num_workers': 4, 'optimizer': {'name': 'Adam', 'lr': 0.0005, 'weight_decay': 0.0001}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-12 18:08:41,692 - GeoFormer_train - INFO -   save_dir: ./checkpoints/s3dis_geoformer
+2025-07-12 18:08:41,692 - GeoFormer_train - INFO -   log_dir: ./logs/s3dis_geoformer
+2025-07-12 18:14:27,321 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-12 18:14:27,324 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-12 18:14:27,324 - GeoFormer_train - INFO -   data: {'data_root': '/media/dhlg/048AA9858AA97438/point clode/Pointnet_Pointnet2_pytorch-master (1)/data/stanford_indoor3d', 'num_points': 2048, 'block_size': 1.5, 'stride': 0.75, 'test_area': 5, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-12 18:14:27,324 - GeoFormer_train - INFO -   model: {'name': 'GeoFormer', 'base_kwargs': {'input_dim': 6, 'embed_dim': 32, 'depth': 6, 'num_heads': 4, 'mlp_ratio': 4.0, 'drop_rate': 0.1}}
+2025-07-12 18:14:27,324 - GeoFormer_train - INFO -   classifier: {'num_classes': 13}
+2025-07-12 18:14:27,324 - GeoFormer_train - INFO -   train: {'batch_size': 1, 'epochs': 200, 'num_workers': 4, 'optimizer': {'name': 'Adam', 'lr': 0.0005, 'weight_decay': 0.0001}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-12 18:14:27,324 - GeoFormer_train - INFO -   save_dir: ./checkpoints/s3dis_geoformer
+2025-07-12 18:14:27,324 - GeoFormer_train - INFO -   log_dir: ./logs/s3dis_geoformer
+2025-07-17 14:42:18,414 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-17 14:42:18,445 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-17 14:42:18,445 - GeoFormer_train - INFO -   data: {'data_root': '/media/dhlg/048AA9858AA97438/point clode/Pointnet_Pointnet2_pytorch-master (1)/data/stanford_indoor3d', 'num_points': 2048, 'block_size': 1.5, 'stride': 0.75, 'test_area': 5, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-17 14:42:18,445 - GeoFormer_train - INFO -   model: {'name': 'GeoFormer', 'base_kwargs': {'input_dim': 6, 'embed_dim': 32, 'depth': 6, 'num_heads': 4, 'mlp_ratio': 4.0, 'drop_rate': 0.1}}
+2025-07-17 14:42:18,445 - GeoFormer_train - INFO -   classifier: {'num_classes': 13}
+2025-07-17 14:42:18,445 - GeoFormer_train - INFO -   train: {'batch_size': 1, 'epochs': 200, 'num_workers': 4, 'optimizer': {'name': 'Adam', 'lr': 0.0005, 'weight_decay': 0.0001}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-17 14:42:18,445 - GeoFormer_train - INFO -   save_dir: ./checkpoints/s3dis_geoformer
+2025-07-17 14:42:18,445 - GeoFormer_train - INFO -   log_dir: ./logs/s3dis_geoformer
+2025-07-17 19:10:21,104 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-17 19:10:21,107 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-17 19:10:21,107 - GeoFormer_train - INFO -   data: {'data_root': '/media/dhlg/048AA9858AA97438/point clode/Pointnet_Pointnet2_pytorch-master (1)/data/stanford_indoor3d', 'num_points': 4096, 'block_size': 1.5, 'stride': 0.75, 'test_area': 5, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-17 19:10:21,107 - GeoFormer_train - INFO -   model: {'name': 'GeoFormer', 'base_kwargs': {'input_dim': 6, 'embed_dim': 64, 'depth': 12, 'num_heads': 8, 'mlp_ratio': 4.0, 'drop_rate': 0.1}}
+2025-07-17 19:10:21,107 - GeoFormer_train - INFO -   classifier: {'num_classes': 13}
+2025-07-17 19:10:21,107 - GeoFormer_train - INFO -   train: {'batch_size': 1, 'epochs': 200, 'num_workers': 4, 'optimizer': {'name': 'Adam', 'lr': 0.0005, 'weight_decay': 0.0001}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-17 19:10:21,107 - GeoFormer_train - INFO -   save_dir: ./checkpoints/s3dis_geoformer
+2025-07-17 19:10:21,108 - GeoFormer_train - INFO -   log_dir: ./logs/s3dis_geoformer
+2025-07-17 19:14:36,843 - GeoFormer_train - INFO - 使用配置文件: configs/s3dis.yaml
+2025-07-17 19:14:36,846 - GeoFormer_train - INFO - 加载的配置内容:
+2025-07-17 19:14:36,846 - GeoFormer_train - INFO -   data: {'root_dir': '/media/dhlg/048AA9858AA97438/point clode/Pointnet_Pointnet2_pytorch-master (1)/data/stanford_indoor3d', 'num_points': 4096, 'block_size': 1.5, 'stride': 0.75, 'test_area': 5, 'train_areas': ['Area_1', 'Area_2', 'Area_3', 'Area_4', 'Area_6'], 'val_areas': ['Area_5']}
+2025-07-17 19:14:36,846 - GeoFormer_train - INFO -   model: {'name': 'GeoFormer', 'base_kwargs': {'input_dim': 6, 'embed_dim': 64, 'depth': 12, 'num_heads': 8, 'mlp_ratio': 4.0, 'drop_rate': 0.1}}
+2025-07-17 19:14:36,846 - GeoFormer_train - INFO -   classifier: {'num_classes': 13}
+2025-07-17 19:14:36,846 - GeoFormer_train - INFO -   train: {'batch_size': 1, 'epochs': 200, 'num_workers': 4, 'optimizer': {'name': 'Adam', 'lr': 0.0005, 'weight_decay': 0.0001}, 'scheduler': {'name': 'StepLR', 'step_size': 50, 'gamma': 0.5}}
+2025-07-17 19:14:36,846 - GeoFormer_train - INFO -   save_dir: ./checkpoints/s3dis_geoformer
+2025-07-17 19:14:36,846 - GeoFormer_train - INFO -   log_dir: ./logs/s3dis_geoformer
